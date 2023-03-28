@@ -1,0 +1,51 @@
+body 
+{
+	background-image: url('menu.jpeg');
+	background-size: 100%;
+	margin: 0;
+    font-family: Josefin Sans;
+    line-height: 1.4;
+}
+
+main
+{
+	background-image: url('papier.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border-radius: 10px;
+	margin: 20px 25% 0 25%;
+	padding-bottom: 50px;
+	padding-top: 20px;
+	text-align: center;
+	color: #3b803d;
+}
+
+hr
+{
+	border-top: 3px dotted #3b803d;
+}
+
+ul
+{
+	margin: 0 100px 0 100px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	border: 2px solid #3b803d;
+	background-color: #429646; 	
+}
+
+a
+{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	text-shadow: -1px -1px black, 1px 1px #333;
+	margin: auto;
+}
+
+ul:hover 
+{
+	opacity: 0.8;
+	transform: scale(1.05);
+}

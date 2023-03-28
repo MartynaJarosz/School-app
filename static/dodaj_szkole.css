@@ -1,0 +1,66 @@
+body {
+	background-image: url('ewi.jpg');
+	background-size: 100%;
+	margin: 0;
+    font-family: Josefin Sans;
+    line-height: 1.4;
+}
+
+main
+{
+	background-image: url('papier.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: 20px 25% 0 25%;
+	padding-bottom: 7px;
+	padding-top: 20px;
+	text-align: center;
+	color: #3b803d;
+	border-radius: 10px;
+}
+
+hr
+{
+	border-top: 2px solid #3b803d;
+}
+
+form
+{
+	text-align: left;
+	margin-left: 220px;
+	margin-right: 150px;
+	font-weight: bold;
+
+}
+
+input
+{
+	padding: 5px 8px;
+	margin: 0;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+button
+{
+	background-color: #4caf50;
+	color: #fff;
+	padding: 14px 20px;
+	margin: 8px 0;
+	margin-left: 100px;
+	border: none;
+	cursor: pointer;
+	width: 30%;
+	font-size: 15px;
+}
+
+button:hover
+{
+	opacity: 0.8;
+}
+
+a
+{
+	color: #403928;
+	margin-left: 620px;
+}

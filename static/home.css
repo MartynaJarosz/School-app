@@ -1,0 +1,43 @@
+body
+{
+	background-image: url('tlo_log_rej.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: 0px;
+	font-family: Josefin Sans;
+}
+
+.box
+{
+	margin-top: 270px;
+	margin-left: 470px;
+	opacity: 0.9;
+}
+
+a
+{
+	background-color: #50b554;
+	border: 5px solid white;	
+	margin: 20px;
+	cursor: pointer; 
+	height: 120px;
+	width: 250px;
+	float: left;
+	text-decoration: none;
+	text-align: center;
+	display: flex;
+}
+
+span
+{
+	
+	margin: auto;
+	color: white;
+	font-size: 30px;
+	opacity: 1;
+}
+ 
+a:hover 
+{
+	opacity: 0.8;
+}
