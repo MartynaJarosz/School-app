@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Dodaj ewidencję</title> 
+		<meta charset="utf-8"> 
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dodaj_ewidencje.css') }}"> 
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<main>
+	    
+		<h1>Dodaj ewidencję</h1>
+		<hr><hr><br>
+
+    <form action="{{ url_for('dodaj_ewidencje') }}" method="post">
+	
+        <label for="numer_sali">Numer sali:</label>
+        <input type="text" id="numer_sali" name="numer_sali"> <br><br>
+
+        <label for="liczba_tablic">Liczba tablic:</label>
+        <input type="text" id="liczba_tablic" name="liczba_tablic"> <br><br>
+
+        <label for="liczba_kred">Liczba kred:</label>
+        <input type="text" id="liczba_kred" name="liczba_kred"> <br><br>
+
+        <label for="liczba_gabek">Liczba gąbek:</label>
+        <input type="text" id="liczba_gabek" name="liczba_gabek"> <br><br>
+
+        <label for="liczba_miejsc">Liczba miejsc:</label>
+        <input type="text" id="liczba_miejsc" name="liczba_miejsc"> <br><br>
+
+        <label for="liczba_komputerow">Liczba komputerów:</label>
+        <input type="text" id="liczba_komputerow" name="liczba_komputerow"> <br><br>
+
+        <label for="posiada_rzutnik">Posiada rzutnik</label>
+        <input type="checkbox" id="posiada_rzutnik" name="posiada_rzutnik"> <br><br>
+
+        <label for="posiada_tablice">Posiada tablicę multimedialną</label>
+        <input type="checkbox" id="posiada_tablice" name="posiada_tablice"> <br><br>
+
+		
+        <button type="submit" value="Submit">Dodaj</button>
+    </form>
+	<br><br>
+    <a href="{{ url_for('menu')}}">Powrót do menu</a><br>
+	
+	</main>
+	
+</body>
+</html>

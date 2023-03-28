@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Dodaj szkołę</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dodaj_szkole.css') }}">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<main>
+
+		<h1>Dodaj szkołę</h1>
+		<hr><hr><br>
+
+    <form action="{{ url_for('dodaj_szkole') }}" method="post">
+
+
+        <label for="nazwa">Nazwa szkoły</label>
+        <input type="text" id="nazwa" name="nazwa"> <br>
+
+        <label for="adres">Adres szkoły</label>
+        <input type="text" id="adres" name="adres"> <br>
+
+        <label for="telefon">Numer telefonu</label>
+        <input type="text" id="telefon" name="telefon"> <br>
+
+         <button type="submit" value="Submit">Dodaj</button>
+    </form>
+	<br><br>
+    <a href="{{ url_for('menu')}}">Powrót do menu</a><br>
+
+	</main>
+
+</body>
+</html>

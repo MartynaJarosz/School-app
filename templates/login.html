@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+		<title>Logowanie</title> 
+		<meta charset="utf-8"> 
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}"> 
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head> 
+<body> 
+
+	<main>
+	<form method="POST" action=""> 
+		 {{ form.hidden_tag() }}
+		<div class="container"> 
+			<h2>Zaloguj się</h2> 
+			<label style="font-weight: bold;">Nazwa użytkownika</label> 
+			<div class="box">{{ form.username }}</div> 
+ 
+			<br>
+			<label style="font-weight: bold;">Hasło</label> 
+			<div class="box">{{ form.password }}</div>
+			<br>
+ 
+			<button type="submit" value="Login">Zaloguj</button>
+			<br>
+
+		</div> 
+	</form> 
+	</main>
+</body> 
+</html> 

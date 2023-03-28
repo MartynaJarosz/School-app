@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Menu</title>
+	<meta charset="utf-8"> 
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='menu.css') }}"> 
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<main>
+    <h1>MENU</h1>
+
+    <h3>Hello {{session['curr_role']}}</h3>
+	<hr><hr><br>
+
+    {% if session['curr_role'] == 'administrator' or session['curr_role'] == 'dyrektor' %}
+    <a href="{{url_for('ewidencja')}}"><ul>Wyświetl ewidencję</ul></a><br>
+    {% endif %}
+	
+	
+    {% if session['curr_role'] == 'dyrektor'%}
+    <a href="{{url_for('lista')}}"><ul>Wyświetl listę uczniów w szkole</ul></a><br>
+    {% endif %}
+	
+	
+    {% if session['curr_role'] == 'administrator'%}
+    <a href="{{url_for('dodaj_ewidencje')}}"><ul>Dodaj ewidencję</ul></a><br>
+	<a href="{{url_for('szkola')}}"><ul>Wyświetl szkoły wchodzące w skład zespołu</ul></a><br>
+    <a href="{{url_for('dodaj_szkole')}}"><ul>Dodaj szkole</ul></a><br>
+    {% endif %}
+
+
+    <a href="{{url_for('logout')}}"><ul>Wyloguj</ul></a>
+	
+	</main>
+	
+</body>
+</html>

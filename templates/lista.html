@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Lista uczniów</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='lista.css') }}">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<main>
+
+	<!<form action="" method="POST">
+
+		<h1>Lista uczniów w szkole</h1>
+		<hr><hr><br>
+
+		<table>
+			<thead>
+				<tr>
+				<th>ID ucznia</th> <th>Imię</th> <th>Nazwisko</th> <th>Data urodzenia</th> <th>Adres zamieszkania</th> <th>Telefon do rodzica</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				{%for item in result %}
+
+				<tr>
+				<th>{{ item.id_ucznia}}</th> <td>{{item.imie}}</td> <td>{{item.nazwisko}}</td> <td>{{item.data_urodzenia}}</td> <td>{{item.aders}}</td> <td>{{item.telefon_do_rodzica}}</td>
+				</tr>
+
+				{% endfor %}
+			</tbody>
+		</table>
+
+	</form>
+	</main>
+</body>
+</html>
